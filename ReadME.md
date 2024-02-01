@@ -175,27 +175,28 @@ Les modifications suivantes ont été apportées pour permettre le traitement de
     
 #### Fonction train_viola()
 - **Changement :** Modification de l'argument passé à la méthode train pour utiliser le tableau CuPy.
-**Ancienne méthode :**
-  
-    ```python
- clf.train(training, 2429, 4548)
-    ```
+  **Ancienne méthode :**
 
-** Nouvelle méthode :**
-    ```python
-clf.train(images_array, 2429, 4548)
-    ```
-    
+  ```python
+  clf.train(training, 2429, 4548)
+  ```
+  **Nouvelle méthode:**
+```python
+   clf.train(images_array, 2429, 4548)
+  ```
+  
 #### Fonction train_cascade()
 - **Changement :** Modification de l'argument passé à la méthode train pour utiliser le tableau CuPy.
 **Ancienne méthode :**
-    ```python
-clf.train(training)
-    ```
-** Nouvelle méthode :**
-    ```python
-clf.train(images_array)
-    ```
+  
+  ```python
+  clf.train(training)
+  ```
+  
+  **Nouvelle méthode:**
+```python
+   python clf.train(images_array)
+  ```
 
 #### Fonctions integral_image(), scan_inclusive(), et transpose_matrix()
 - **Changement :** Remplacement de toutes les instances de numpy par cupy pour exploiter les capacités du GPU.
