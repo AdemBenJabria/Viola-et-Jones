@@ -1,5 +1,5 @@
-### Adem Ben jabria 
-## M2 MIAGE IA2
+### Adem BEN JABRIA
+## Université Côte d'Azur - M2 MIAGE IA2
 
 ### Explication des Fichiers Pickle et du Jeu de Données
 
