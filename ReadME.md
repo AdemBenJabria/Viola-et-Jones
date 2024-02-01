@@ -176,22 +176,24 @@ Les modifications suivantes ont été apportées pour permettre le traitement de
 #### Fonction train_viola()
 - **Changement :** Modification de l'argument passé à la méthode train pour utiliser le tableau CuPy.
 **Ancienne méthode :**
-  ```python
-clf.train(training, 2429, 4548)
+  
+    ```python
+ clf.train(training, 2429, 4548)
     ```
+
 ** Nouvelle méthode :**
-  ```python
+    ```python
 clf.train(images_array, 2429, 4548)
     ```
     
 #### Fonction train_cascade()
 - **Changement :** Modification de l'argument passé à la méthode train pour utiliser le tableau CuPy.
 **Ancienne méthode :**
-  ```python
+    ```python
 clf.train(training)
     ```
 ** Nouvelle méthode :**
-  ```python
+    ```python
 clf.train(images_array)
     ```
 
@@ -291,7 +293,7 @@ On doit pouvoir selectionner quelle méthode exécuter avec une option
 
 ### Structure du Code
 
-```python
+   ```python
 
 if __name__ == "__main__":
     import argparse
@@ -320,6 +322,7 @@ if __name__ == "__main__":
         find_face(args.image_source)
     else:
         print("Option non valide. Veuillez utiliser -train, -train-fast, -accuracy, ou -find.")
+   ```
 
 
 
