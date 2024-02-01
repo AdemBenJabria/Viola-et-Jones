@@ -134,8 +134,8 @@ def transpose_matrix(array):
 
 - **Nouvelle Implémentation (GPU) :**
   ```python
-def scan_inclusive(array):
-    return cp.cumsum(array, axis=0)
+   def scan_inclusive(array):
+       return cp.cumsum(array, axis=0)
     ```
 #### Fonction `transpose_matrix`
 
